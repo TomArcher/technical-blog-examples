@@ -1,6 +1,7 @@
 # Sample Code: The Rain Paradox
 
-This repository contains the companion code for the blog post:  
+This repository contains the companion code for the blog post:
+
 👉 [Should You Walk or Run in the Rain? The Puzzle That Sparked a Passion](https://tomarcher.io/posts/rain-paradox/) on [Signal & Syntax](https://tomarcher.io/).
 
 ## About This Sample

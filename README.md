@@ -1,6 +1,8 @@
 # "Signal & Syntax" Blog Code Samples
 
-This repository is a collection of code samples that accompany posts on my blog: [Signal & Syntax](https://tomarcher.io)
+This repository is a collection of code samples that accompany posts on my blog:
+
+👉 [Signal & Syntax](https://tomarcher.io)
 
 Each subfolder corresponds to a specific blog post and contains runnable code and instructions.  
 
