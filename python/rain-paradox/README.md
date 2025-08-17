@@ -31,6 +31,6 @@ Run the main script:
 python main.py
 ```
 
-🤝 Contributing
+## 🤝 Contributing
 
 Pull requests are welcome! If you spot an improvement, bug, or want to extend the sample, feel free to open a PR.
