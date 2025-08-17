@@ -4,10 +4,9 @@ This repository contains the companion code for the blog post:
 
 👉 [Should You Walk or Run in the Rain? The Puzzle That Sparked a Passion](https://tomarcher.io/posts/rain-paradox/) on [Signal & Syntax](https://tomarcher.io/).
 
-## About This Sample
+## 📝 About This Sample
 
-This code demonstrates the concepts covered in the post.  
-The blog explains the reasoning, prompt design, and step-by-step breakdown, while this repository provides the runnable implementation.
+This code simulates the classic question: *"Do you stay drier walking or running in the rain?"*  The blog post explains the problem setup, the prompts used to explore it with AI, and the lessons learned from modeling the scenario. This sample provides the runnable Python code behind that exploration.
 
 ## 📋 Requirements
 
