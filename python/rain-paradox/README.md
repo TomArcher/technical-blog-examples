@@ -8,8 +8,8 @@ This code simulates the classic question: *"Do you stay drier walking or running
 
 ## 📋 Requirements
 
-- Python 3.10 or 3.11
-- `pip` for dependency management
+- [Python 3.10 or 3.11](https://www.python.org/downloads/)
+- `pip` for dependency management: `python -m ensurepip --upgrade`
 
 ## ⚙️ Setup
 
