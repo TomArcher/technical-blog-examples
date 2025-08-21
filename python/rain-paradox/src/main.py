@@ -22,7 +22,6 @@ class Person:
         """Vertical projection against the direction of travel."""
         return self.height_feet * self.shoulder_width_feet
 
-
 @dataclass(frozen=True)
 class Rain:
     """
@@ -34,7 +33,6 @@ class Rain:
     """
     intensity_drops_per_sqft_s: float
     fall_speed_ft_s: float
-
 
 def intensity_from_inches_per_hour(
     rainfall_inches_per_hour: float,
@@ -64,7 +62,6 @@ def intensity_from_inches_per_hour(
 
     intensity = depth_flux_ft_per_s / drop_volume_cuft
     return intensity
-
 
 def simulate_wetness(
     speed_ft_s: float,
@@ -100,7 +97,6 @@ def simulate_wetness(
     rain_from_front = (intensity / fall_speed) * front_area * distance_feet
 
     return rain_from_above + rain_from_front
-
 
 def plot_wetness_vs_speed(
     speeds_ft_s: Iterable[float],
@@ -150,11 +146,9 @@ def plot_wetness_vs_speed(
     plt.tight_layout()
     plt.show()
 
-
 def mph_to_ft_s(mph: float) -> float:
     """Convert miles per hour to feet per second."""
     return mph * 5280.0 / 3600.0
-
 
 if __name__ == "__main__":
     # Default person dimensions (~5'10" tall;
