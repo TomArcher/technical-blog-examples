@@ -16,11 +16,6 @@ Heuristic (baseline):
 - When a row overflows width, start a new row by advancing z (depth).
 - When depth overflows, start a new "layer" by advancing y (height).
 - Skip items that no longer fit in remaining height.
-
-NOTE:
-- This is NOT the guillotine/rotation solver from the docstring of your original;
-  it’s the same simple shelf heuristic you had, but with consistent axes and a fixed plot.
-- If you want full 6-axis rotations + guillotine splitting, I can layer that in next.
 """
 
 from dataclasses import dataclass
