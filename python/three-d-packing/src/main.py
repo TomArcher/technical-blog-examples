@@ -88,7 +88,8 @@ def pack_truck(
         # If it doesn't fit within remaining height, skip
         if y + h > truck.height:
             skipped.append(name)
-            notes.append(f"{name} skipped: too tall for remaining truck height.")
+            notes.append(f"{name} skipped: too tall for "
+                         "remaining truck height.")
             continue
 
         # Place the item
@@ -133,7 +134,8 @@ def _cuboid_faces_mpl_from_internal(x, y, z, w, h, d):
         xi, yi, zi = v
         return [xi, zi, yi]  # (X=width, Y=depth, Z=height)
 
-    V = list(map(to_mpl, [v000, v100, v110, v010, v001, v101, v111, v011]))
+    V = list(map(to_mpl, [v000, v100, v110, v010, 
+                          v001, v101, v111, v011]))
     # faces as quads using transformed verts
     return [
         [V[0], V[1], V[2], V[3]],  # back  (z)
@@ -244,5 +246,6 @@ if __name__ == "__main__":
     try:
         plot_truck_packing(truck, placements)
     except Exception as e:
-        print("\n(Visualization skipped; matplotlib may not be installed.)")
+        print("\n(Visualization skipped; matplotlib "
+              "may not be installed.)")
         print(e)
