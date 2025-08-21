@@ -197,7 +197,7 @@ def plot_truck_packing(truck: Dimensions, placements: List[Placement]):
     ax.set_ylabel("Depth (Y)")
     ax.set_zlabel("Height (Z)")
     ax.set_xlim(0, truck.width)
-    ax.set_ylim(0, truck.depth)
+    ax.set_ylim(truck.depth, 0)
     ax.set_zlim(0, truck.height)
 
     # Proportional box aspect
