@@ -1,10 +1,10 @@
-# Sample Code: The Meeting Diet
+# Sample Code: The Five-Second Rule Explored with Math & Python
 
 This repository contains the companion code for the blog post:
 
-👉 [The Meeting Diet: Max Value Under Time & Energy Budgets](https://tomarcher.io/posts/meeting-diet/) on [Signal & Syntax](https://tomarcher.io/).
+👉 [The Five-Second Rule, Debunked with Math and Python](https://tomarcher.io/posts/five-second-rule/) on [Signal & Syntax](https://tomarcher.io/).
 
-This code demonstrates how to frame your weekly calendar as a **0/1 knapsack problem**. Each meeting has a *value*, a *time cost*, and an *energy cost*. The solver (using [PuLP](https://coin-or.github.io/pulp/)) selects the combination of meetings that maximizes total value while staying within time and energy budgets. The blog post walks through the problem setup, prompt engineering, and lessons learned. This sample provides the runnable Python code behind that exploration.
+This code demonstrates how to model food contamination when dropped on the floor. Instead of treating the "five-second rule" as a binary yes/no question, the simulation shows how germs transfer over time based on surface contamination, food contact area, and food properties like moisture and texture. The blog post walks through the logic, math modeling, AI prompts, and lessons learned. This sample provides the runnable Python code behind that exploration.
 
 ## 📋 Requirements
 
@@ -17,7 +17,7 @@ Clone the repo and install dependencies:
 
 ```bash
 git clone https://github.com/TomArcher/technical-blog-examples.git
-cd technical-blog-examples/meeting-diet
+cd technical-blog-examples/five-second-rule
 python -m venv .venv
 source .venv/bin/activate   # On Windows: .venv\Scripts\activate
 pip install -r requirements.txt
@@ -28,37 +28,9 @@ pip install -r requirements.txt
 Run the main script:
 
 ```bash
-python meeting_diet.py
+python main.py
 ```
-
-You’ll see:
-
-- A list of selected meetings under your constraints
-
-- Totals for value, time, and energy
-
-- A chart showing value-per-minute efficiency (attend vs decline)
-
-## 🛠️ Customizing for Your Calendar
-
-Update the meetings list in main() with your own events:
-
-```python
-meetings = [
-    {"name": "Roadmap Sync",  "value": 10, "time": 50, "energy": 4},
-    {"name": "Vendor Pitch",  "value":  3, "time": 30, "energy": 2},
-    {"name": "1:1 Mentoring", "value":  8, "time": 45, "energy": 2},
-]
-```
-
-- value = impact score (higher = more important)
-
-- time = meeting length in minutes
-
-- energy = subjective cognitive load (1–6 scale works well)
-
-Then, adjust **TIME_BUDGET** and **ENERGY_BUDGET** to fit your week.
 
 ## 🤝 Contributing
 
-Pull requests are welcome! If you spot an improvement, bug, or want to extend the sample (e.g., import from a calendar, handle overlaps, add mandatory meetings), feel free to open a PR.
+Pull requests are welcome! If you spot an improvement, bug, or want to extend the sample, feel free to open a PR.
