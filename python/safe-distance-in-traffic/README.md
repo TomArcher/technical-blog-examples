@@ -2,7 +2,7 @@
 
 This repository contains the companion code for the blog post:
 
-👉 [Modeling Safe Following Distance in Traffic](https://tomarcher.io/posts/safe-distance-in-traffic/) on [Signal & Syntax](https://tomarcher.io/).
+👉 [Rethinking the Three-Second Traffic Rule: When Physics Says It’s Not Enough](https://tomarcher.io/posts/safe-distance-in-traffic/) on [Signal & Syntax](https://tomarcher.io/).
 
 This code simulates the classic question: *"Is providing three seconds of time between your car and the car in front of you enough?"*  The blog post explains the problem setup, the prompts used to explore it with AI, and the lessons learned from modeling the scenario. This sample provides the runnable Python code behind that exploration.
 
