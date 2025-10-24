@@ -1,4 +1,4 @@
-# Sample Code: Modeling Safe Following Distance in Traffic
+# Sample Code: Rethinking the Three-Second Traffic Rule: When Physics Says It’s Not Enough
 
 This repository contains the companion code for the blog post:
 
