@@ -19,7 +19,7 @@
 
 ## Essays & Perspectives
 - [From Solow to ChatGPT: Why Total Factor Productivity Can't Keep Up With Generative AI](/tfp-chatgpt)
-- [Hash Collisions: Why Your 'Unique' Fingerprints Aren't (And Why That's Usually OK)](/hash-codes-collisions)
+- [Hash Collisions: Why Your 'Unique' Fingerprints Aren't (And Why That's Usually OK)](/hash-code-collisions)
 hash-codes-collisions
 
 ## Python Techniques and Tooling
