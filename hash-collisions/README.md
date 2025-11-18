@@ -2,7 +2,7 @@
 
 This repository contains the companion code for the blog post:
 
-👉 [Hash Collisions: Why Your 'Unique' Fingerprints Aren't (And Why That's Usually OK)](https://tomarcher.io/posts/hash-codes-collisions/) on [Signal & Syntax](https://tomarcher.io/).
+👉 [Hash Collisions: Why Your 'Unique' Fingerprints Aren't (And Why That's Usually OK)](https://tomarcher.io/posts/hash-collisions/) on [Signal & Syntax](https://tomarcher.io/).
 
 This code demonstrates the mathematical certainty of hash collisions, the near-impossibility of meaningful collisions, and practical implications for modern cryptography. The examples cover everything from the pigeonhole principle and semantic collisions to modern password hashing with Argon2 and blockchain's double SHA-256. The blog post explores how hash functions have evolved from MD5 (broken) through SHA-1 (deprecated) to current best practices with SHA-256/SHA-3 and beyond.
 
