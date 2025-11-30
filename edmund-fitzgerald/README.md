@@ -1,6 +1,3 @@
-Here's the updated README for the Edmund Fitzgerald blog post:
-
-```markdown
 # Sample Code: The Wreck of the Edmund Fitzgerald - Modeling Decomposition in Extreme Environments
 
 This repository contains the companion code for the blog post:
@@ -76,6 +73,3 @@ At the Edmund Fitzgerald's depth (162m/530ft) in 4°C water:
 ## 🤝 Contributing
 
 Pull requests are welcome! If you spot an improvement, bug, or want to extend the model (salinity effects, current modeling, probabilistic variations), feel free to open a PR.
-```
-
-This README follows the same structure as your hash collisions example but is tailored to the Edmund Fitzgerald post's content and code structure.
