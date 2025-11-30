@@ -7,7 +7,7 @@ def superior_conditions(depth_meters: float, season: str = "November") -> LakeCo
     """
     Model Lake Superior conditions at given depth.
 
-    Superior has thermocline around 60-200 feet.
+    Lake Superior has thermocline around 60-200 feet.
     Below 60 meters, temperature constant at 4°C year-round.
     November conditions assume late fall (storm season).
 
