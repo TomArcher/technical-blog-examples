@@ -24,7 +24,6 @@ git clone https://github.com/TomArcher/technical-blog-examples.git
 cd technical-blog-examples/temperature-top-p-creativity-knobs
 python -m venv .venv
 source .venv/bin/activate   # On Windows: .venv\Scripts\activate
-pip install -r requirements.txt
 ```
 
 For API experiments, set your environment variables:
@@ -38,49 +37,23 @@ export ANTHROPIC_API_KEY="your-key-here"
 
 Run the simulations and visualizations:
 
-```bash
-# Run temperature comparison visualization
-python visualize_temperature.py
+**softmax.py** — Converts raw logits into probabilities that sum to 1 using the standard softmax function.
 
-# Compare top-k vs top-p sampling
-python compare_topk_topp.py
+**softmax_with_temperature.py** — Applies temperature scaling to logits before softmax, reshaping the probability distribution.
 
-# Show temperature and top-p interaction
-python temp_topp_interaction.py
+**visualize_temperature_effects.py** — Generates bar charts comparing probability distributions across different temperature values.
 
-# Run API experiments (requires API keys)
-python api_experiments.py
-```
+**top_p_sampling.py** — Implements nucleus sampling by dynamically truncating the distribution to tokens summing to probability p.
 
-## 📁 What's Included
+**compare_topk_topp.py** — Demonstrates why top-p outperforms top-k by comparing token inclusion in confident vs uncertain distributions.
 
-### Core Sampling Functions
-- **softmax.py** - Standard softmax implementation with numerical stability
-- **softmax_with_temperature.py** - Temperature-scaled softmax
-- **top_p_sampling.py** - Nucleus sampling implementation
-- **top_k_sampling.py** - Fixed top-k sampling for comparison
+**temp_topp_interaction.py** — Shows how temperature affects the number of tokens that survive a top-p cutoff.
 
-### Analysis & Comparison
-- **compare_topk_topp.py** - Demonstrates when top-p outperforms top-k
-- **temp_topp_interaction.py** - Shows how temperature affects nucleus size
-- **test_determinism.py** - Tests temperature=0 determinism across providers
+**openai_generate.py** — Generates multiple completions using the OpenAI API with configurable temperature and top-p parameters.
 
-### API Experiments
-- **api_experiments.py** - Live experiments with OpenAI and Anthropic APIs
-- **generate_samples.py** - Generate multiple completions at various settings
+**anthropic_generate.py** — Generates multiple completions using the Anthropic API with configurable temperature and top-p parameters.
 
-### Visualizations
-- **visualize_temperature.py** - Bar charts showing probability reshaping
-- **plot_entropy_curve.py** - Entropy vs temperature relationship
-
-## 📊 Key Findings
-
-- Temperature divides logits before softmax, exponentially reshaping the distribution
-- Low temperature (0.1-0.3) concentrates probability on top tokens
-- High temperature (>1.0) flattens toward uniform randomness
-- Top-p dynamically adjusts candidate pool based on model confidence
-- Temperature applies before top-p, so they interact in non-obvious ways
-- Temperature=0 is not perfectly deterministic in all implementations
+**test_determinism.py** — Tests whether temperature=0 produces identical outputs across multiple trials.
 
 ## 🤝 Contributing
 
