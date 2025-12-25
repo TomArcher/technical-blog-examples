@@ -39,21 +39,21 @@ Run the simulations and visualizations:
 
 **softmax.py** — Converts raw logits into probabilities that sum to 1 using the standard softmax function.
 
-**softmax_with_temperature.py** — Applies temperature scaling to logits before softmax, reshaping the probability distribution.
+**softmax_with_temperature.py**: Applies temperature scaling to logits before softmax, reshaping the probability distribution.
 
-**visualize_temperature_effects.py** — Generates bar charts comparing probability distributions across different temperature values.
+**visualize_temperature_effects.py**: Generates bar charts comparing probability distributions across different temperature values.
 
-**top_p_sampling.py** — Implements nucleus sampling by dynamically truncating the distribution to tokens summing to probability p.
+**top_p_sampling.py**: Implements nucleus sampling by dynamically truncating the distribution to tokens summing to probability p.
 
-**compare_topk_topp.py** — Demonstrates why top-p outperforms top-k by comparing token inclusion in confident vs uncertain distributions.
+**compare_topk_topp.py**: Demonstrates why top-p outperforms top-k by comparing token inclusion in confident vs uncertain distributions.
 
-**temp_topp_interaction.py** — Shows how temperature affects the number of tokens that survive a top-p cutoff.
+**temp_topp_interaction.py**: Shows how temperature affects the number of tokens that survive a top-p cutoff.
 
-**openai_generate.py** — Generates multiple completions using the OpenAI API with configurable temperature and top-p parameters.
+**openai_generate.py**: Generates multiple completions using the OpenAI API with configurable temperature and top-p parameters.
 
-**anthropic_generate.py** — Generates multiple completions using the Anthropic API with configurable temperature and top-p parameters.
+**anthropic_generate.py**: Generates multiple completions using the Anthropic API with configurable temperature and top-p parameters.
 
-**test_determinism.py** — Tests whether temperature=0 produces identical outputs across multiple trials.
+**test_determinism.py**: Tests whether temperature=0 produces identical outputs across multiple trials.
 
 ## 🤝 Contributing
 
