@@ -25,13 +25,10 @@ pip install -r requirements.txt
 
 ## 🚀 Running the Examples
 
-Run the individual modules:
+Run the individual modules in the `src` directory`. The modules copied directly from the post have names that start with "snippet". The modules that don't start with the word "snippet" are enhanced examples meant to explore more detail about the topic.  
 
 ```bash
-python semantic_collisions.py    # Demonstrates why random bytes don't form valid data
-python password_evolution.py     # Compares 2005 vs 2025 password hashing
-python blockchain_hashing.py     # Shows Bitcoin's double SHA-256 approach
-python crypto_agility.py         # Demonstrates version-aware hashing
+python <module>.py
 ```
 
 ## 📁 What's Included
