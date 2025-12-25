@@ -33,7 +33,7 @@ export OPENAI_API_KEY="your-key-here"
 export ANTHROPIC_API_KEY="your-key-here"
 ```
 
-## 🚀 Running the Examples
+## 🚀 Sample Modules
 
 Run the simulations and visualizations:
 
